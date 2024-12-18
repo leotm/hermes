@@ -88,7 +88,7 @@ Handle<NativeConstructor> createFunctionConstructor(Runtime &runtime) {
   PropertyFlags pf;
   pf.clear();
   pf.enumerable = 0;
-  pf.configurable = 0;
+  pf.configurable = 1;
   pf.accessor = 1;
   auto res = JSObject::defineNewOwnProperty(
       functionPrototype,
